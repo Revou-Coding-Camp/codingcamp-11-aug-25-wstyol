@@ -23,67 +23,86 @@
       border-radius: 50%;
       margin: auto;
     }
+     .hero {
+      background: #1a1a2e;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .feature-icon {
+      font-size: 3rem;
+      color: #6c63ff;
+    }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand text-white d-flex align-items-center" href="#">
-        <img src="AC.png" alt="Logo" width="50" height="50" class="me-2 rounded-circle border border-light">
-        MyBrand
-      </a>
-       <div class="d-flex justify-content-center">
-    <ul class="nav border rounded">
-      <li class="nav-item">
-        <a class="nav-link px-4" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link px-4" href="#">Our Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link px-4" href="#">Portofolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link px-4" href="#">Message Us</a>
-      </li>
-    </ul>
-  </div>
+      <a class="navbar-brand" href="#">
+        <img src="AC.png" alt="Logo" width="50" height="50" class="me-2 rounded-circle border border-light">CryptoInsight</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trending">Trending</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="py-5 text-center border-bottom">
+   <section class="hero">
     <div class="container">
-      <h2 class="fw-bold">Hi Harfi, Welcome To Website</h2>
-      <p>Ini adalah website latihan pertama</p>
-      <div class="border d-flex align-items-center justify-content-center" style="height:400px;">
+      <h1>Welcome to CryptoInsight</h1>
+      <p class="lead">Your gateway to the latest cryptocurrency trends and insights.</p>
+       <div class="border d-flex align-items-center justify-content-center" style="height:400px;">
         1366×578
+      </div>
+      <a href="#trending" class="btn btn-primary btn-lg mt-3">Explore Now</a>
+    </div>
+    </section>
+
+  <!-- Our Headquarter -->
+ <section id="trending" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Trending Cryptocurrencies</h2>
+      <div class="row g-4">
+        <div class="col-md-4 text-center">
+          <div class="feature-icon">₿</div>
+          <h4 class="mt-3">Bitcoin (BTC)</h4>
+          <p>Leading the crypto market with dominance and widespread adoption.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="feature-icon">Ξ</div>
+          <h4 class="mt-3">Ethereum (ETH)</h4>
+          <p>The powerhouse behind smart contracts and decentralized applications.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="feature-icon">◎</div>
+          <h4 class="mt-3">Cardano (ADA)</h4>
+          <p>Innovative with proof-of-stake consensus and academic research backing.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Our Headquarter -->
-  <section class="py-5 border-bottom">
-    <div class="container text-center">
-      <h4 class="fw-bold mb-4">Our Headquarter</h4>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="circle"></div>
-          <p class="mt-2">Jakarta</p>
-        </div>
-        <div class="col-md-4">
-          <div class="circle"></div>
-          <p class="mt-2">Bandung</p>
-        </div>
-        <div class="col-md-4">
-          <div class="circle"></div>
-          <p class="mt-2">Surabaya</p>
-        </div>
-      </div>
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Why CryptoInsight?</h2>
+      <p class="text-center">
+        We are dedicated to bringing you up-to-date information, market analysis, and resources to navigate the
+        cryptocurrency world. Whether you're a beginner or an expert, CryptoInsight empowers you to make informed decisions.
+      </p>
     </div>
   </section>
+
 
   <!-- Message Us -->
   <section class="py-5 border-bottom">
