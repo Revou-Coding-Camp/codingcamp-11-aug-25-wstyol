@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <style>
+    .logo-circle {
+      background-color: rgb(55, 0, 255);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .circle {
+      width: 120px;
+      height: 120px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand text-white d-flex align-items-center" href="#">
+        <img src="AC.png" alt="Logo" width="50" height="50" class="me-2 rounded-circle border border-light">
+        MyBrand
+      </a>
+       <div class="d-flex justify-content-center">
+    <ul class="nav border rounded">
+      <li class="nav-item">
+        <a class="nav-link px-4" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-4" href="#">Our Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-4" href="#">Portofolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-4" href="#">Message Us</a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-5 text-center border-bottom">
+    <div class="container">
+      <h2 class="fw-bold">Hi Harfi, Welcome To Website</h2>
+      <p>Ini adalah website latihan pertama</p>
+      <div class="border d-flex align-items-center justify-content-center" style="height:400px;">
+        1366×578
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Headquarter -->
+  <section class="py-5 border-bottom">
+    <div class="container text-center">
+      <h4 class="fw-bold mb-4">Our Headquarter</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="circle"></div>
+          <p class="mt-2">Jakarta</p>
+        </div>
+        <div class="col-md-4">
+          <div class="circle"></div>
+          <p class="mt-2">Bandung</p>
+        </div>
+        <div class="col-md-4">
+          <div class="circle"></div>
+          <p class="mt-2">Surabaya</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section class="py-5 border-bottom">
+    <div class="container">
+      <h4 class="fw-bold mb-4">Message Us</h4>
+      <div class="row">
+        <!-- Form -->
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3 row">
+              <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+              <div class="col-sm-9">
+                <input type="text" id="nama" class="form-control" placeholder="Nama">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="tgl" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+              <div class="col-sm-9">
+                <input type="date" id="tgl" class="form-control">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-3 col-form-label">Jenis Kelamin</label>
+              <div class="col-sm-9 d-flex align-items-center">
+                <div class="form-check me-3">
+                  <input type="radio" class="form-check-input" name="gender" id="lk">
+                  <label class="form-check-label" for="lk">Laki-Laki</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="gender" id="pr">
+                  <label class="form-check-label" for="pr">Perempuan</label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="pesan" class="col-sm-3 col-form-label">Pesan</label>
+              <div class="col-sm-9">
+                <textarea id="pesan" class="form-control" rows="3" placeholder="Pesan"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-secondary w-100">Submit</button>
+          </form>
+        </div>
+
+        <!-- Output -->
+        <div class="col-md-6">
+          <div class="border p-3">
+            <p><strong>Current time :</strong> Fri Jun 17 2022 11:27:28 GMT+0100</p>
+            <p><strong>Nama :</strong> Harfi Novian</p>
+            <p><strong>Tanggal Lahir :</strong> 01/11/1995</p>
+            <p><strong>Jenis Kelamin :</strong> Laki-Laki</p>
+            <p><strong>Pesan :</strong> Lagi Belajar buat Website</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 text-center">
+    <p class="mb-0">Created By RevoU</p>
+  </footer>
+
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
